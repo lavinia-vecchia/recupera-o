@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text, ScrollView, Image, StyleSheet } from 'react-native';
 import Header from '../../../components/header';
 
-const filmes = [
+const comidas = [
   { title: 'Sushi', image: 'https://www.nutrimixassessoria.com.br/wp-content/uploads/2019/01/e-seguro-comer-sushi-conheca-os-riscos-da-comida-japonesa.jpg' },
   { title: 'Pizza', image: 'https://p2.trrsf.com/image/fget/cf/774/0/images.terra.com/2023/07/10/dia-da-pizza-skkhweuqjcrq.jpg' },
   { title: 'Poke', image: 'https://www.clickcamboriu.com.br/wp-content/uploads/2024/08/Big-Poke-3072x2048.jpg' },
@@ -10,7 +10,7 @@ const filmes = [
 
 ];
 
-const TelaFilmes = () => {
+const Telacomidas = () => {
   return (
     <View style={styles.container}>
       <Header title="<- Filmes" voltarPara="/sobre-mim" />
