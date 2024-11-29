@@ -63,7 +63,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'space-between',
         paddingHorizontal: 15,
-        backgroundColor: '#2C3E50',
+        backgroundColor: 'pink',
     },
     voltarTexto: {
         color: '#fff',

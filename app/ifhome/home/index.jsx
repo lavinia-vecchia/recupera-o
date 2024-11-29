@@ -24,7 +24,7 @@ export default function App() {
     const { cart, setCart } = useContext(AppContext)
     const [cartLenght, setCartLength] = useState(0)
 
-    function pushcarrinho(item) {
+    function pushCart(item) {
         setCart([...cart, item])
     }
 
@@ -50,8 +50,8 @@ export default function App() {
                 <Text style={styles.headerText}>iFome</Text>
             </View>
             <View style={styles.carrinho}>
-                <Link href={'../cart'}><Image
-                    source={{ uri: '../../assets/images/cart.png' }}
+                <Link href={'/ifhome/carrinho'}><Image
+                    source={require('../../../assets/images/cart.png') }
                     style={styles.carrinhoImagem}
                 /></Link>
 
@@ -76,7 +76,7 @@ const styles = StyleSheet.create({
         height: 60,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: 'pink',
+        backgroundColor: '#fff',
     },
     headerText: {
         fontSize: 24,
@@ -134,7 +134,7 @@ const styles = StyleSheet.create({
         borderRadius: 5,
     },
     comprarButtonText: {
-        color: 'pink',
+        color: '#fff',
         textAlign: 'center',
     },
 });
